@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Harvesting a Prey Population (MSY) — Simulation</title>
+<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-		<!-- Your code goes here-->
-
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<div class="card" id="simbox">
+<div class="simbar"><span class="simbar-logo" aria-hidden="true"><img src="images\logo.svg" alt="Amrita Vishwa Vidyapeetham"></span><h1 class="simbar-title">Harvesting a Prey Population (MSY)</h1><button class="fs-btn" id="fsBtn" onclick="toggleFS()" title="Toggle full screen" aria-label="Toggle full screen">⛶</button></div>
+<div class="sim">
+<div class="controls">
+<label style="font-weight:600;font-size:.9rem;display:block;margin-bottom:6px">Plot</label>
+<select class="dropBox" id="plotMode" onchange="run()">
+  <option value="traj">Population trajectories vs time</option>
+  <option value="prod">Production curve &amp; harvest line</option>
+</select>
+<div class="field"><label>Growth rate r <span class="val" id="v_r">1.2</span></label><input type="range" id="r" min="0.2" max="3" step="0.05" value="1.2" oninput="sync()"></div>
+<div class="field"><label>Carrying capacity K <span class="val" id="v_K">1000</span></label><input type="range" id="K" min="200" max="2000" step="50" value="1000" oninput="sync()"></div>
+<div class="field"><label>Shape θ <span class="val" id="v_th">1</span></label><input type="range" id="th" min="0.5" max="3" step="0.1" value="1" oninput="sync()"></div>
+<div class="field"><label>Harvest rate H (per year) <span class="val" id="v_H">295</span></label><input type="range" id="H" min="0" max="800" step="1" value="295" oninput="sync()"></div>
+<div class="field"><label>Number of years <span class="val" id="v_steps">60</span></label><input type="range" id="steps" min="10" max="200" step="5" value="60" oninput="sync()"></div>
+<div class="field"><label>Step size (Δt) <span class="val" id="v_stepSize">1</span></label><input type="range" id="stepSize" min="0.1" max="2" step="0.1" value="1" oninput="sync()"></div>
+<div class="btnrow">
+  <button class="btn btn-primary" onclick="run()">▶ Run</button>
+  <button class="btn btn-ghost" onclick="resetSim()">↺ Reset</button>
+</div>
+<div class="dl-label">Download</div>
+<div class="btnrow">
+  <button class="btn btn-accent" onclick="downloadPNG('harvesting.png')">⤓ PNG</button>
+  <button class="btn btn-accent" onclick="downloadCSV()">⤓ CSV</button>
+</div>
+</div>
+<div class="plotwrap">
+<div class="plot-title" id="plotTitle">Population trajectories vs time</div>
+<canvas class="chart" id="chart" width="720" height="420"></canvas>
+<div class="legend" id="legend"></div>
+<div class="readout">Cursor: X = <b id="rx">–</b>, Y = <b id="ry">–</b></div>
+<div class="counts" id="counts"></div>
+</div>
+</div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="./js/chart.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
