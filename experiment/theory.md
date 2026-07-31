@@ -74,3 +74,4 @@ Now, we reuse the prey equation above with harvesting rate with the theta value 
 
 &nbsp;
 
+
