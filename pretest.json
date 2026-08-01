@@ -1,0 +1,75 @@
+
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Harvesting comes into role in which kind of interaction ?",
+      "answers": {
+        "a": "Animal-plant interaction",
+        "b": "Plant-plant interaction",
+        "c": "Animal-animal interaction",
+        "d": "Human-animal interaction"
+      },
+ 
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },   
+
+
+    {
+      "question": "2. Which one of the below examples indicate harvesting?",
+      "answers": {
+        "a": "Rearing cattle",
+        "b": "Maintaining poultry farms",
+        "c": "Fisheries",
+        "d": "All"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+
+
+    
+    {
+      "question": "3. Maximum sustainable yield (MSY) refers to:",
+      "answers": {
+        "a": "Maximum number of individuals harvested",
+        "b": "Maximum number of groups harvested",
+        "c": "Maximum number of individual spawn harvested",
+        "d": "All"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+
+
+ 
+    {
+      "question": "4. Recruitment rate refers to:",
+      "answers": {
+        "a": "Number of old individuals present in the population",
+        "b": "Number of individuals moved out from the population",
+        "c": "Number of new individuals added to the existing population",
+        "d": "None"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+
+
+
+    {
+      "question": "5. Should harvesting rate should be equal to recruitment rate for MSY?",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
