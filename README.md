@@ -4,11 +4,11 @@
 <b>Discipline | <b>Biotechnology and Biomedical Engineering
 :--|:--|
 <b> Lab | <b> Population ecology Virtual Lab II
-<b> Experiment|     <b> Effects of Carrying Capacity and Satiation in Predator-Prey Dynamics
+<b> Experiment|     <b> Harvesting a Prey Population
 
 ### About the Experiment 
 
-This experiment explores the natural cycle between predator and prey populations by introducing two realistic limits: the environment's carrying capacity for prey and the feeding limits (satiation) of predators. Using the interactive simulator, you will adjust these natural boundaries to observe whether the species find a stable balance, continuously cycle, or crash into extinction.
+This experiment explores how continuous harvesting—like hunting or fishing—impacts the long-term survival and growth rate of a prey population. By adjusting the harvesting rate in the simulation, you will observe the delicate balance between maintaining a sustainable yield and causing the population to collapse into extinction.
 
 <b>Name of Developer | <b> Dr. Shyam Diwakar 
 :--|:--|
